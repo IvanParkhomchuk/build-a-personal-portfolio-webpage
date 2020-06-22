@@ -2,6 +2,12 @@ body {
   margin-bottom: 0px;
 }
 
+@media (max-width: 460px) {
+  body {
+
+  }
+}
+
 #navbar-cont {
   display: flex;
   position: fixed;
@@ -74,6 +80,12 @@ body {
   text-shadow: 0 0 1em #acaa9c;
 }
 
+@media (max-width: 460px) {
+  #welcome-section-h1 {
+    font-size: 80px;
+  }
+}
+
 #welcome-section-p {
   background: linear-gradient(204deg, rgba(107,134,216,1) 10%, rgba(172,170,156,1) 62%);
   font-size: 40px;
@@ -88,6 +100,12 @@ body {
 
 #welcome-section-p:hover {
   text-shadow: 0 0 1em #6b86d8;
+}
+
+@media (max-width: 460px) {
+  #welcome-section-p {
+    font-size: 30px;
+  }
 }
 
 #welcome-section-cont {
@@ -112,6 +130,12 @@ body {
   margin: -8px;
 }
 
+@media (max-width: 460px) {
+  #projects {
+    height: 1750px;
+  }
+}
+
 #projects-cont {
   display: flex;
   align-items: center;
@@ -132,6 +156,12 @@ body {
   cursor: default;
 }
 
+@media (max-width: 460px) {
+  #projects-h1 {
+    font-size: 60px;
+  }
+}
+
 #neon-border {
   box-shadow:
   0 0 0.1vw  0.2vw #A1CEFB,   
@@ -141,7 +171,13 @@ body {
   inset 0 0 0.4vw  0.2vw #3E3EC0,
   inset 0 0 0.5vw  0.2vw #A1CEFB;
   margin-top: 90px;
-  width: 500px;
+  width: 480px;
+}
+
+@media (max-width: 460px) {
+  #neon-border {
+    width: 350px;
+  }
 }
 
 .images {
@@ -162,6 +198,15 @@ body {
   flex-direction: row;
 }
 
+@media (max-width: 460px) {
+  #projects-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 100px;
+  }
+}
+
 .page-tile {
   margin-right: 50px;
   box-shadow:
@@ -170,6 +215,13 @@ body {
   inset 0 0 1.5vw  0.2vw #0606F8,
   inset 0 0 0.1vw  0.1vw #3E3EC0;
   transition: .2s ease;
+}
+
+@media (max-width: 460px) {
+  .page-tile {
+    margin-right: 0px;
+    margin-top: 40px;
+  }
 }
 
 .page-tile:hover {
@@ -219,10 +271,26 @@ body {
   cursor: default;
 }
 
+@media (max-width: 460px) {
+  #profile-link-h1 {
+    text-align: center;
+    font-size: 70px;
+  }
+}
+
 #my-links {
   margin-top: -300px;
   display: flex;
   justify-content: center;
+}
+
+@media (max-width: 460px) {
+  #my-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 50px;
+  }
 }
 
 .my-links-a {
@@ -235,4 +303,10 @@ body {
 
 .my-links-a:hover {
   transform: translateY(-6px);
+}
+
+@media (max-width: 460px) {
+  .my-links-a {
+    margin-top: 30px;
+  }
 }
