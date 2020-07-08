@@ -2,7 +2,7 @@ body {
   margin-bottom: 0px;
 }
 
-@media (max-width: 460px) {
+@media (max-width: 700px) {
   body {
     
   }
@@ -27,12 +27,25 @@ body {
   left: 0px;
 }
 
+@media (max-width: 700px) {
+  #navbar {
+    display: flex;
+    justify-content: center;
+  }
+}
+
 #navbar-ul {
   display: flex;
   flex-direction: row;
   list-style-type: none;
   margin: 0px;
   font-family: Helvetica, sans-serif;
+}
+
+@media (max-width: 700px) {
+  #navbar-ul {
+    padding: 0px;
+  }
 }
 
 .navbar-li {
@@ -60,66 +73,43 @@ body {
 
 #welcome-section {
   height: 1000px;
-  background-image: url('https://images.pexels.com/photos/924824/pexels-photo-924824.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-attachment: fixed;
+  background-color: #eee;
   margin: -8px;
 }
 
-@media (max-width: 460px) {
+@media (max-width: 700px) {
   #welcome-section {
-    background-color: #eee;
-    background-image: none;
+    height: 1000px;
+    /* background-color: #eee;
+    background-image: none; */
   }
 }
 
 #welcome-section-h1 {
-  background: linear-gradient(204deg, rgba(107,134,216,1) 10%, rgba(172,170,156,1) 62%);
+  color: #6b86d8;
   font-size: 120px;
   margin: 5px;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  text-shadow: 0 0 1em #6b86d8;
   font-family: Marker Felt, fantasy;
-  transition: .2s;
   cursor: default;
 }
 
-#welcome-section-h1:hover {
-  text-shadow: 0 0 1em #acaa9c;
-}
-
-@media (max-width: 460px) {
+@media (max-width: 700px) {
   #welcome-section-h1 {
     font-size: 75px;
-    background: none;
-    -webkit-background-clip: unset;
-    -webkit-text-fill-color: unset;
-    text-shadow: none;
     font-family: Helvetica, sans-serif;
     color: #2C75FF;
   }
 }
 
 #welcome-section-p {
-  background: linear-gradient(204deg, rgba(107,134,216,1) 10%, rgba(172,170,156,1) 62%);
+  color: #6b86d8;
   font-size: 40px;
   margin: 5px;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
   font-family: Snell Roundhand, cursive;
-  text-shadow: 0 0 1em #acaa9c;
-  transition: .2s;
   cursor: default;
 }
 
-#welcome-section-p:hover {
-  text-shadow: 0 0 1em #6b86d8;
-}
-
-@media (max-width: 460px) {
+@media (max-width: 700px) {
   #welcome-section-p {
     font-size: 30px;
     background: none;
@@ -139,24 +129,24 @@ body {
   height: 900px;
 }
 
-
+@media (max-width: 700px) {
+  #welcome-section-cont {
+    height: 900px;
+  }
+}
 
 
 
 #projects {
   height: 1000px;
-  background-image: url('https://images.pexels.com/photos/1304642/pexels-photo-1304642.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-attachment: fixed;
+  background-color: black;
   margin: -8px;
 }
 
-@media (max-width: 460px) {
+@media (max-width: 700px) {
   #projects {
     height: 1650px;
-    background-color: #FDF4E3;
+    background-color: black;
     background-image: none;
   }
 }
@@ -169,42 +159,33 @@ body {
 }
 
 #projects-h1 {
-  color: #CEE5FC;
+  color: #7FCEFF;
   font-family: 'Raleway', sans-serif;
   font-size: 80px;
   /* background-color: black;
   border: 2px solid red; */
-  text-shadow: 
-  .1vw 0vw   5vw #0606F8, .1vw 0vw  1vw #0606F8, .1vw 0vw  1vw #0606F8,
-  .1vw 0vw   1vw #0606F8, .1vw 0vw  1vw #0606F8, .1vw 0vw  1vw #0606F8;
   text-align: center;
   cursor: default;
 }
 
-@media (max-width: 460px) {
+@media (max-width: 700px) {
   #projects-h1 {
     font-size: 60px;
     color: #be3144;
-    text-shadow: none;
   }
 }
 
 #neon-border {
-  box-shadow:
-  0 0 0.1vw  0.2vw #A1CEFB,   
-  0 0 0.3vw  0.3vw #3E3EC0, 
-  0 0   4vw  0.4vw #0606F8,
-  inset 0 0 1.5vw  0.4vw #0606F8,
-  inset 0 0 0.4vw  0.2vw #3E3EC0,
-  inset 0 0 0.5vw  0.2vw #A1CEFB;
+  border: 2px solid #48A0F8;
+  border-radius: 5px;
   margin-top: 90px;
   width: 480px;
 }
 
-@media (max-width: 460px) {
+@media (max-width: 700px) {
   #neon-border {
     width: 350px;
-    box-shadow: none;
+    border-color: #be3144;
   }
 }
 
@@ -220,7 +201,7 @@ body {
   margin-bottom: 0px;
 }
 
-@media (max-width: 460px) {
+@media (max-width: 700px) {
   .project-text {
     background-color: #be3144;
   }
@@ -232,7 +213,7 @@ body {
   flex-direction: row;
 }
 
-@media (max-width: 460px) {
+@media (max-width: 700px) {
   #projects-div {
     display: flex;
     flex-direction: column;
@@ -243,15 +224,11 @@ body {
 
 .page-tile {
   margin-right: 50px;
-  box-shadow:
-  0 0 0.1vw  0.1vw #3E3EC0, 
-  0 0   2vw  0.2vw #0606F8,
-  inset 0 0 1.5vw  0.2vw #0606F8,
-  inset 0 0 0.1vw  0.1vw #3E3EC0;
-  transition: .2s ease;
+  transition: .3s ease;
+  border: 2px solid #48A0F8;
 }
 
-@media (max-width: 460px) {
+@media (max-width: 700px) {
   .page-tile {
     margin-right: 0px;
     margin-top: 40px;
@@ -261,17 +238,11 @@ body {
 }
 
 .page-tile:hover {
-  box-shadow:  
-  0 0 0.1vw  0.1vw #3E3EC0, 
-  0 0   4vw  0.4vw #0606F8,
-  inset 0 0 1.5vw  0.4vw #0606F8,
-  inset 0 0 0.1vw  0.1vw #3E3EC0;
   transform: translateY(-10px);
 }
 
-@media (max-width: 460px) {
+@media (max-width: 700px) {
   .page-tile:hover {
-    box-shadow: none;
     transform: none;
   }
 }
@@ -297,7 +268,7 @@ body {
   font-family: 'Raleway', sans-serif;
 }
 
-@media (max-width: 460px) {
+@media (max-width: 700px) {
   #profile-link {
     background-color: #45567d;
     background-image: none;
@@ -320,7 +291,7 @@ body {
   cursor: default;
 }
 
-@media (max-width: 460px) {
+@media (max-width: 700px) {
   #profile-link-h1 {
     text-align: center;
     font-size: 70px;
@@ -333,7 +304,7 @@ body {
   justify-content: center;
 }
 
-@media (max-width: 460px) {
+@media (max-width: 700px) {
   #my-links {
     display: flex;
     flex-direction: column;
@@ -354,14 +325,14 @@ body {
   transform: translateY(-6px);
 }
 
-@media (max-width: 460px) {
+@media (max-width: 700px) {
   .my-links-a {
     margin-top: 30px;
     
   }
 }
 
-@media (max-width: 460px) {
+@media (max-width: 700px) {
   .my-links-a:hover {
     transform: none;
   }
